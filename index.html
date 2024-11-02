@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARCIAL 2 WEB</title>
+    <style>@import url('./css/index.css');</style>
+</head>
+
+<body>
+    <div id="contenedor">
+        <div id="div_lista_fotos">
+            <h2>Mars Rover Photos</h2>  
+            <label for="fecha">Earth Date:</label>
+            <input type="text" id="fecha_consulta" name="fecha">
+            <button type="button" id="btn_buscar" onclick="buscar()">Find</button>
+            <br><br>
+
+            <table id="lista_fotos" border="1" cellspacing="0" cellpadding="2">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Rover name</th>
+                        <th>Camera</th>
+                        <th>Details</th>
+                    </tr>
+                    <tbody>
+                        <!--Aquí se agregará la info correspondiente a las fotos-->
+                    </tbody>
+                </thead>
+            </table>
+
+            <div id="botones_p_n">
+                <button type="button" id="btn_anterior" onclick="anterior()">Previous</button>
+                <button type="button" id="btn_siguiente" onclick="siguiente()">Next</button>
+            </div>
+
+        </div>
+        <div id="div_detalles_foto">
+            <h2>Photo detail</h2> 
+            <div id="foto">
+                <!--Aquí deberia ir la foto-->
+            </div>
+            <!--Aqui deberia ir la info de la foto despues de darle click al boton-->
+            <div id="elementos_foto">
+                <p id="p_id"><b>Id:</b></p>
+                <p id="p_martian_sol"><b>Martian sol:</b></p>
+                <p id="p_earth_date"><b>Earth date:</b></p>
+            </div>
+            
+
+        </div>
+    </div>
+    
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
